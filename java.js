@@ -23,10 +23,14 @@ const person = {
     },
     count_it:function() {
         let size = 0;
+        let counter = 0;
         for (key in person) {
             size++;
+            const value = person[key]
+           
+            counter += String(value).length
         }
-        return size;
+        return size + " " +counter;
     }
 }
   ;
